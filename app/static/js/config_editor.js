@@ -1536,7 +1536,7 @@ function createAndAppendBudgetMapItem(mapKey, mapValue, modelId) {
   valueInput.placeholder = "预算 (整数)";
   valueInput.className = `${MAP_VALUE_INPUT_CLASS} w-24 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50`;
   valueInput.min = -1;
-  valueInput.max = 32767;
+  valueInput.max = 1048576;
   valueInput.addEventListener("input", function () {
     let val = this.value.replace(/[^0-9-]/g, "");
     if (val !== "") {
